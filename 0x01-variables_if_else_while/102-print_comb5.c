@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of two 2-digit numbers
+ * main - prints all possible combinations of two two-digit numbers
  *
  * Return: Always 0 (Success)
  */
@@ -11,7 +11,7 @@ int main(void)
 
 	for (y = 0; y < 100; y++)
 	{
-		for (y = 0; y < 100; y++)
+		for (z = 0; z < 100; z++)
 		{
 			if (y < z)
 			{
@@ -32,3 +32,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
