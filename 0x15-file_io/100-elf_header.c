@@ -19,10 +19,10 @@ void close_elf(int elf);
 
 
 /**
- * check_elf - checks if file is an ELF file
- * @e_ident: a pointer to an array containing the ELF magic numbers.
+ * check_elf - ELF file checker
+ * @e_ident: pointer to array of magic numbers
  *
- * Description: if if the file is not an ELF file - exit code 98.
+ * Description: exit code 98 if file not ELF
  */
 void check_elf(unsigned char *e_ident)
 {
@@ -45,7 +45,7 @@ void check_elf(unsigned char *e_ident)
  * print_magic - prints the magic numbers of an ELF header.
  * @e_ident: pointer to an array containing the ELF magic numbers.
  *
- * Description: magic numbers are separated by spaces.
+ * Description: magic numbers are separated
  */
 void print_magic(unsigned char *e_ident)
 {
@@ -261,15 +261,13 @@ void close_elf(int elf)
 }
 
 /**
- * main - displays the information contained in the
- *        ELF header at the start of an ELF file.
- * @argc: the number of arguments supplied to the program.
+ * main - displays the information contained in the ELF header
+ * @argc: the number of arguments
  * @argv: array of pointers to the arguments.
  *
- * Return: 0 on success.
+ * Return: 0 on success
  *
- * Description: If the file is not an ELF File or
- *              the function fails - exit code 98.
+ * Description: exit code 98 if file is not an ELF file
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
